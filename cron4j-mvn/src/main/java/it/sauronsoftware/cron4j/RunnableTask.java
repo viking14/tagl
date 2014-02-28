@@ -27,7 +27,7 @@ package it.sauronsoftware.cron4j;
  * @author Carlo Pelliccia
  * @since 2.0
  */
-class RunnableTask extends Task {
+public class RunnableTask extends Task {
 
 	/**
 	 * The wrapped runnable object.

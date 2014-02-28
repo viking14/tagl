@@ -1,7 +1,6 @@
 package it.sauronsoftware;
 
-import it.sauronsoftware.cron4j.SchedulingPattern;
-import it.sauronsoftware.cron4j.InvalidPatternException;
+import it.sauronsoftware.cron4j.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -31,7 +30,7 @@ public class SchedulingPatternTest {
     String pattern;
     pattern="0 5 * * *|8 10 * * *|22 17 * * *";
     assertTrue(pattern + "is correct", SchedulingPattern.validate(pattern));
-    pattern="0 5 * *";
+    pattern="0 5 * * *";
     assertTrue(pattern + "is correct", SchedulingPattern.validate(pattern));
   }
 }
